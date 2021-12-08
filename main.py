@@ -15,14 +15,4 @@ app = FastAPI()
 async def get_products(offset: int, count: int):
     with open('data.json') as products:
         response = json.load(products)
-        print(response)
-        return response
-
-
-if __name__ == '__main__':
-    uvicorn.run(
-        '__main__:app',
-        host=settings.SERVER_HOST,
-        port=settings.SERVER_PORT,
-        reload=True,
-    )
+        return response[offset:min(offset + count, len(response))]

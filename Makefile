@@ -12,4 +12,4 @@ venv:
 
 .PHONY: run
 run:
-	$(VENV)/bin/python __main__.py
+	$(VENV)/bin/uvicorn main:app  --host '0.0.0.0' --reload
