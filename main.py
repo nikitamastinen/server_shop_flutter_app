@@ -6,6 +6,8 @@ app = FastAPI()
 
 @app.get('/search/')
 async def search_products(query: str):
+    query = query.lower()
+    print(query)
     result = []
     with open('data.json') as products:
         response = json.load(products)
