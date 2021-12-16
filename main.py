@@ -1,12 +1,22 @@
 import json
-from typing import Optional
-
-import uvicorn as uvicorn
-from fastapi import FastAPI, Response, Request, APIRouter
-from pydantic import BaseModel
-from settings import settings
+from fastapi import FastAPI
 
 app = FastAPI()
+
+
+@app.get('/search/')
+async def search_products(query: str):
+    result = []
+    with open('data.json') as products:
+        response = json.load(products)
+        for item in response:
+            template: str = ''
+            for i in item.keys():
+                template += str(item[i])
+            if template.__contains__(query):
+                print(template)
+                result.append(item)
+        return result
 
 
 @app.get(
