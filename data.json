@@ -21,10 +21,6 @@
     "amount": "4",
     "tags": [
       {
-        "id": "recommended",
-        "title": "Рекомендованное"
-      },
-      {
         "id": "discount",
         "title": "Скидка"
       },
@@ -233,7 +229,7 @@
   {
     "id": "14",
     "title": "Пышка-Толстушка",
-    "image_url": "https://lh3.googleusercontent.com/proxy/j34F2lKC3Cns3s4wCtj4Nf_D-sFWbPdAlZkSF282y-ZEYYcEeOaFr_bijU_HP-gFEqk1YJgkxCpp7VpQOPrgVfS-VHv7RBlp_Y8fuDUigY_HF78moXA8roYal19Xz00qZGW5YtbwYqkbiaBW5dFbz84W3N2tHnXbIA",
+    "image_url": "https://domos.ru/images/blog/14695/Depositphotos_205806978_m-2015.jpg",
     "description": "По́нчик или пы́шка — круглое или кольцеобразное, жаренное во фритюре хлебобулочное изделие, с начинкой или без неё. Пышка в узком смысле слова — пончик без начинки с отверстием посередине.",
     "amount": "4",
     "tags": [
